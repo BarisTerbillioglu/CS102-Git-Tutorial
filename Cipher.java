@@ -15,10 +15,11 @@ public class Cipher
         // for all chars in the input string
         for (int i = 0; i < inputString.length(); i++)   
         {
-
+            outputString += replaceChar(inputString.charAt(i), true);
         }
 
         return outputString;
+
     }
 
     public String decrypt(String inputString) {
